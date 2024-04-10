@@ -14,6 +14,11 @@ import java.util.List;
 public class QuestionEditRequest implements Serializable {
 
     /**
+     * id
+     */
+    private Long id;
+
+    /**
      * 标题
      */
     private String title;
@@ -49,4 +54,5 @@ public class QuestionEditRequest implements Serializable {
     private List<JudgeConfig> judgeConfig;
 
     private static final long serialVersionUID = 1L;
+
 }

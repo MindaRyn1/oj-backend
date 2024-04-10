@@ -20,17 +20,6 @@ public class QuestionQueryRequest extends PageRequest implements Serializable {
      * id
      */
     private Long id;
-
-    /**
-     * id
-     */
-    private Long notId;
-
-    /**
-     * 搜索词
-     */
-    private String searchText;
-
     /**
      * 标题
      */
@@ -47,19 +36,14 @@ public class QuestionQueryRequest extends PageRequest implements Serializable {
     private List<String> tags;
 
     /**
-     * 至少有一个标签
+     * 题目答案
      */
-    private List<String> orTags;
+    private String answer;
 
     /**
-     * 创建用户 id
+     * 创建题目用户 id
      */
     private Long userId;
-
-    /**
-     * 收藏用户 id
-     */
-    private Long favourUserId;
 
     /**
      * 判题用例
